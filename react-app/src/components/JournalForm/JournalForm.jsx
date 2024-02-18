@@ -41,7 +41,7 @@ function JournalForm({ onSubmit }) {
 
 	return(
 		<form className='journal-form' onSubmit={addJournalItem}>
-			<input type='title' name='title' style={{ border:  formValidState.title ? undefined : '1px solid red' }}/>
+			<input type='title' name='title' className={`input ${formValidState.title ? '' : 'invalid'}`}/>
 			<input type='date' name='date'style={{ border:  formValidState.date ? undefined : '1px solid red' }}/>
 			<input type='text' name='tag'/>
 			<textarea name='post' id='' cols="30" rows="10" style={{ border:  formValidState.post ? undefined : '1px solid red' }}></textarea>

@@ -1,8 +1,9 @@
 import './CartButton.css';
 
-function CartButton({children}) {
+function CartButton({children, className}) {
+	const cl = 'cart-button' + (className ? ' ' +  className : '');
 	return (
-		<button className='cart-button'>
+		<button className={cl}>
 			{children}
 		</button>
 	);

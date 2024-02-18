@@ -1,6 +1,5 @@
-.journal-list{
+.journal-form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background: #181818;
 }
